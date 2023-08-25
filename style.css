@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+}
+.card .face{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transition: 0.4s;
+}
+.card .face.face1{
+    position: relative;
+    background: gray;
+    transform: translateY(100px);
+    opacity: 1;
+    text-align: left;
+    font-size: small;
+    z-index: 1;
+}
+
+.card .face.face1 h3{
+    opacity: 0.2;
+}
+
+.card:hover .face.face1{
+    text-align: left;
+    position: relative;
+    transform: translateY(0px);
+    box-shadow: 0 0 100px blueviolet;
+    opacity: 1;
+    font-size: x-large;
+}
+
+.card:hover .facePic1{
+    background: url(./img/breakingNews.jpg);
+    background-size: cover;
+}
+.card:hover .face.face1 h3{
+    opacity: 1;
+
+}
+
+.card .face2{
+    position: relative;
+    background: beige;
+    transform: translateY(-100px);
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+    text-align: center;
+    padding-top: 20%;
+}
+
+.card:hover .face.face2{
+    position: relative;
+    transform: translateY(0px);
+}
+
+.card:hover .facePic2{
+    background: url(./img/miions.jpg);
+    background-size: cover;
+}
